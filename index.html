@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Homework</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="#">
+	<link rel="shortcut icon" href="#">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!--Шапка (хедер)-->
+	<header id="header">
+		<div class="block__header header-block">
+			<h1 class="header-block__maintitle">Этапы и типы верстки сайта</h1>
+		</div>
+		<div class="block__menu menu-block">
+			<nav class="menu-block__navigation">
+				<h2 class="menu-block__title"> <mark> Навигация по статье:</mark></h2>
+				<ol class="menu-block__list">
+					<li><a href="#content__first first-content" class="menu-block__link">Работа головой</a></li>
+					<li><a href="#content__second second-content" class="menu-block__ink">Работа с макетом</a></li>
+					<li><a href="#content__third third-content" class="menu-block__link">Верстка</a></li>
+					<li><a href="#content__fourth fourth-content" class="menu-block__ink">Стилизация</a></li>
+					<li><a href="#content__fifth fifth-content" class="menu-block__link"> Скрипты</a></li>
+					<li><a href="#content__sixth sixth-content" class="menu-block__link">Проверка</a></li>
+					<li><a href="#footer" class="menu-block__link">Footer</a></li>
+				</ol>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="content">
+			<div class="content__container">
+				<div id="content__first first-content">
+					<h2 class="first-content__title"><mark>Работа головой:</mark></h2>
+					<div class="first-content__article">
+						<p>
+							Почему работа головой?<br> Прежде чем приступить к верстке, нужно проанализировать имеющийся макет.
+							<br>
+							Например, можно
+							нарисовать на листке тетради его структуру, сразу продумать, с помощью каких свойств можно сделать
+							такую сетку, которая
+							представлена дизайнером. <br> По-простому этапы верстки сайта можно разделить на три части.
+						</p>
+						<p>Это первый этап. Этап осмысления. Вы должны понять, как вообще подойти к верстке конкретного
+							макета. В своих мыслях вы
+							уже формируете действия, которые будете выполнять дальше.</p>
+					</div>
+					<div class="first-content__image">
+						<img src="img/maxresdefault.jpg" alt="work_head">
+					</div>
+				</div>
+				<div id="content__second second-content">
+					<h2 class="second-content__title"><mark>Работа с макетом:</mark></h2>
+					<div class="second-content__article">
+						<p>
+							Значит, посмотрели на макет, осмыслили суть. Теперь нужно вырезать из него все необходимое, что
+							может пригодиться:
+							<br>
+							иконки, картинки и прочую графику. Неплохо будет также записать шрифты, которые используются в
+							макете. Для работы нужно
+							использовать PhotoShop или GIMP. Именно эти редакторы поддерживают работу со слоями.
+						</p>
+						<p>Когда вы вырежете всю графику, ее нужно будет сложить в папку. Обычно ее называют images. По сути,
+							теперь вы уже готовы
+							к тому, чтобы приступить к верстке. <br> Первый этап осмысления позволил вам в мыслях представить
+							какой-то план, которым вы
+							будете руководствоваться.</p>
+					</div>
+					<div class="second-content__image">
+						<img src="img/1.jpg" alt="work_head">
+					</div>
+				</div>
+				<div id="content__third third-content">
+					<h2 class="third-content__title"><mark>Верстка:</mark></h2>
+					<div class="third-content__article">
+						<p>
+							Для начала вам нужно создать два файла: html и css. В одном у вас будет содержание и разметка, в
+							другом – стили. <br>
+							Очевидно, что верстать будет легче, если придерживаться порядка. Например, начать с прописывания
+							базовых вещей в теге
+							head. <br> Здесь следует указать кодировку, путь к таблице стилей, title и т.д.
+						</p>
+						<p>Далее начинается работа с <span> непосредственным содержимым</span>. Это все, что будет находится в
+							теге .
+							Начинать нужно с верхнего
+							левого угла, двигаясь в правый нижний. <br> То есть, сначала вы описываете шапку сайта (ее левую
+							часть,
+							а потом правую),
+							потом ниже описываете следующую структурную часть и таким образом постепенно переносите макет в
+							код.</p>
+
+						<p>
+							Это не является обязательным правилом. Вы можете сначала сверстать правый сайдбар, потом контент, а
+							потом еще что-то. <br>
+							Вышеописанное является лишь советом,<span> который абсолютно </span> логичен с точки зрения
+							здравого смысла.
+						</p>
+
+						<p>
+							Сначала верстальщик пишет структуру в html. Заодно он сразу вешает элементам классы и
+							идентификаторы, чтобы позднее
+							стилизовать их в css. <br> Нормальный верстальщик должен придумывать адекватные имена классов.
+							Например,
+							menu, head, widget и
+							т.п. Чтобы было понятно, что это за элемент.
+						</p>
+
+						<p>
+							Например, когда я только начинал, мой код наверняка мог рассмешить любого. В нем присутствовали
+							такие имена классов, <br>
+							как: verh_sayta, konec и bok. Конечно, это лучше, чем block1, block3, block459, но выглядит как-то
+							непрофессионально и <br>
+							не совсем понятно, о каком именно элементе речь.
+						</p>
+					</div>
+					<div class="third-content__image">
+						<img src="img/bb3153.jpg" alt="work_head">
+					</div>
+				</div>
+				<div id="content__fourth fourth-content">
+					<h2 class="fourth-content__title"><mark>Верстка:</mark></h2>
+					<div class="fourth-content__article">
+						<p>
+							Структура написана, идентификаторы и классы заданы. А это означает, что можно начинать использовать
+							CSS. Я бы даже
+							сказал, что необязательно полностью прописывать структуру и только после этого трогать стили. Можно
+							и даже нужно
+							работать параллельно. В какой-то момент вы полностью закончите структуру и полностью
+							сосредоточитесь на стилях. <br> (а может
+							и нет, все зависит от того, насколько правильно получится все написать изначально).
+						</p>
+						<p>Дальнейший процесс верстки сайта в основном будет происходить с помощью css-файла, в котором вы
+							прописываете нужные <span>
+								свойства</span> и правила. <br> Сколько это может занять времени?<span> Зависит</span> от вашего
+							профессионализма. Я видел
+							людей, которые за час
+							верстали приличный одностраничник. <br> При этом он был адаптивным и имел анимационные эффекты.
+							Профессионал может сверстать
+							простую страницу минут за 20.</p>
+
+						<p>
+							Это возможно, если использовать по максимуму готовые решения.<br> Например, в фреймворке Bootstrap
+							все
+							уже давно <span>
+								стилизовано</span>, вам просто нужно добавлять нужные стилевые классы к своим элементам.
+						</p>
+
+						<p>
+							Стилизация тоже должна выполняться по порядку. <br>Сначала нужно прописать какие-то общие правила.
+							Например, общий фон
+							странички, базовый шрифт.<br> Не забывайте сбрасывать отступы.
+						</p>
+
+						<p>
+							Далее прописываются более специфические свойства.<br> Цвет рамок, стили для боковой колонки,
+							футера,
+							расположение логотипа и
+							многое другое – это так называемый второй этап стилизации,<br> когда вы работаете с каждым
+							отдельным
+							блоком.
+						</p>
+						<p>
+							Например, решили вы написать стили для шапки. Так пишите их до конца, не переключайтесь на другие
+							элементы! В конце
+							css-файла обычно прописывают медиа-запросы (для адаптивности, если она нужна). <br> Также здесь
+							могут
+							подключаться шрифты и
+							описываться различные эффекты, которые потом можно применить к блокам через задание стилевого
+							класса.
+						</p>
+					</div>
+					<div class="fourth-content__image">
+						<img src="img/5.jpg" alt="work_head">
+					</div>
+				</div>
+				<div id="content__fifth fifth-content">
+					<h2 class="fifth-content__title"><mark>Скрипты:</mark></h2>
+					<div class="fifth-content__article">
+						<p>
+							Верстальщик должен уметь работать с JavaScript-библиотеками. С их помощью задается различное
+							поведение для веб-страниц.
+							Пример: адаптивное меню. <br> При уменьшении окна, допустим, до 500 пикселей, меню должно
+							свернуться в
+							одну кнопку. При клике
+							на нее должен раскрываться вертикальный список (к примеру). Все это реализуется с помощью
+							JavaScript.
+						</p>
+						<p>Здесь нужно знать, какие задачи нам нужно выполнить с помощью скриптов. Если на сайте используется
+							очень мало
+							веб-сценариев, <br> то нужно минимизировать код библиотек, чтобы не использовать огромные куски
+							кода для
+							реализации пары
+							нужных вещей.</p>
+					</div>
+					<div class="fifth-content__image">
+						<img src="img//6.png" alt="work_head">
+					</div>
+					<div class="fifth-content__links">
+						<h4 class="fifth-content__title">Библиотеки Js :</h4>
+						<ul class="fifth-content__list">
+							<li class="fifth-content__link"><a target="_blank" href="https://jquery.com/">Jquery</a></li>
+							<li class="fifth-content__link"><a target="_blank" href="https://nodejs.org/en/">Node js</a></li>
+							<li class="fifth-content__link"><a target="_blank" href="https://reactjs.org/">React</a></li>
+							<li class="fifth-content__link"><a target="_blank" href="https://d3js.org/">D3js</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="content__sixth sixth-content">
+					<h2 class="sixth-content__title"><mark>Проверка:</mark></h2>
+					<div class="sixth-content__article">
+						<p>
+							Допустим, ваша верстка готова. Осталось проверить ее. Естественно, с первого раза невозможно все
+							сделать, поэтому
+							наверняка вы еще не раз откроете файлы для редактирования. Стоит проверить верстку во всех
+							браузерах, которые у вас
+							есть. Можно использовать онлайн-сервисы. Также полезно будет воспользоваться инструментами для
+							проверки, которые
+							предлагаются в этой статье.
+						</p>
+						<div class="sixth-content__image">
+							<img src="img/7.jpg" alt="work_head">
+						</div>
+						<p>Дело в том, что существуют разные типы верстки сайта, поэтому приведенная в статье
+							последовательность подходит для самой
+							популярной техники – блочной. Если вы верстаете таблицами, то вам придется больше повозиться с
+							html-структурой. Мы
+							рассмотрели основные этапы верстки сайта. Если вы хотите узнавать больше, то обязательно
+							подписывайтесь на блог.</p>
+					</div>
+					<div class="sixth-content__links">
+						<h4 class="sixth-content__title">Библиотеки Js :</h4>
+						<ul class="sixth-content__list">
+							<li class="sixth-content__link"><a target="_blank" href="https://www.w3.org/">WCAG 3 FPWD</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<nav class="footer-block__navigation">
+			<h2 class="footer-block__title"> <mark>Навигация:</mark></h2>
+			<ul class="footer-block__list">
+				<li><a href="#header" class="footer-block__link">В начало</a></li>
+			</ul>
+		</nav>
+		<div class="block__end end-block">
+			<div class="end-block__title">
+				<h3 class="mentor">Мой учитель:</h3>
+			</div>
+			<div class="end-block__name">
+				<a target="_blank" href="https://www.youtube.com/c/FreelancerLifeStyle/featured"><mark>Евгений Андриканич
+					</mark></a>
+			</div>
+			<div class="end-block__down">
+				<h4>Все права защищены</h4>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
